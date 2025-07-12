@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca UI Navegable</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Biblioteca UI</h1>
+    <p>Una biblioteca de componentes UI en CSS y HTML</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#botones" class="nav-link">Botones</a></li>
+        <li class="nav-item"><a href="#formulario" class="nav-link">Formulario</a></li>
+        <li class="nav-item"><a href="#tarjetas" class="nav-link">Tarjetas</a></li>
+        <li class="nav-item"><a href="#badges" class="nav-link">Badges</a></li>
+        <li class="nav-item"><a href="#alertas" class="nav-link">Alertas</a></li>
+        <li class="nav-item"><a href="#layout" class="nav-link">Layout</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Más ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="#modal">Modal</a></li>
+            <li><a href="#ejemplo">Ejemplo Completo</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección: Botones -->
+  <section id="botones" class="demo-section">
+    <h2 class="demo-subtitle">Botones</h2>
+    <div class="flex">
+      <button class="btn btn-success">Éxito✅</button>
+      <button class="btn btn-primary">Primario</button>
+      <button class="btn btn-outline">Secundario</button>
+      <button class="btn btn-info">Informaciónℹ️</button>
+      <button class="btn btn-warning">Advertencia⚠️</button>
+      <button class="btn btn-danger">Peligro</button>
+    </div>
+  </section>
+
+  <!-- Sección: Formulario -->
+  <section id="formulario" class="demo-section">
+    <h2 class="demo-subtitle">Formulario Rápido</h2>
+    <form class="form">
+      <input type="text" class="input" placeholder="Nombre" required>
+      <input type="email" class="input" placeholder="Correo" required>
+      <textarea class="input" placeholder="Mensaje" rows="4" required></textarea>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Sección: Tarjetas -->
+  <section id="tarjetas" class="demo-section">
+    <h2 class="demo-subtitle">Tarjetas</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Tarjeta Simple</h3>
+        <p>Contenido de la tarjeta con información útil para el usuario.</p>
+      </div>
+      <div class="card">
+        <h3>Con Badge</h3>
+        <p>Tarjeta con indicador de estado.</p>
+        <span class="badge badge-success">Nuevo</span>
+      </div>
+      <div class="card">
+        <h3>Con Botón</h3>
+        <p>Tarjeta interactiva con acción.</p>
+        <button class="btn btn-primary">Ver más</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Badges -->
+  <section id="badges" class="demo-section">
+    <h2 class="demo-subtitle">Badges</h2>
+    <div class="flex">
+      <span class="badge badge-primary">Nuevo</span>
+      <span class="badge badge-success">Éxito</span>
+      <span class="badge badge-warning">Advertencia</span>
+      <span class="badge badge-danger">Peligro</span>
+    </div>
+  </section>
+
+  <!-- Sección: Alertas -->
+  <section id="alertas" class="demo-section">
+    <h2 class="demo-subtitle">Alertas</h2>
+    <div class="alert alert-success"><strong>✅Éxito:</strong> Operación completada correctamente.</div>
+    <div class="alert alert-warning"><strong>⚠️Advertencia:</strong> Presta atención a este mensaje.</div>
+    <div class="alert alert-danger"><strong>❌Error:</strong> Ha ocurrido un problema.</div>
+  </section>
+
+  <!-- Sección: Layout -->
+  <section id="layout" class="demo-section">
+    <h2 class="demo-subtitle">Layout</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Columna 1</h3>
+        <p>Contenido de la primera columna.</p>
+      </div>
+      <div class="card">
+        <h3>Columna 2</h3>
+        <p>Contenido de la segunda columna.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Modal -->
+  <section id="modal" class="demo-section">
+    <h2 class="demo-subtitle">Modal</h2>
+    <div class="card">
+      <div class="flex flex-between">
+        <div>
+          <h3>Tarea Única</h3>
+          <p>Seleccione la opción que requiera realizar</p>
+        </div>
+        <div class="flex">
+          <button class="btn btn-outline">Editar✍️</button>
+          <button class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Ejemplo Completo -->
+  <section id="ejemplo" class="demo-section">
+    <h2 class="demo-subtitle">Ejemplo Completo con los componentes usados</h2>
+    <div class="card">
+      <div class="flex flex-between mb-1">
+        <h3>Perfil de Usuario</h3>
+        <span class="badge badge-success">Activo</span>
+      </div>
+      <div class="grid grid-2 mb-1">
+        <input type="text" class="input" placeholder="Nombre" value="Juan Pérez">
+        <input type="email" class="input" placeholder="Email" value="juan@ejemplo.com">
+      </div>
+      <div class="alert alert-warning mb-1">
+        <strong>Aviso:</strong> Verifica tu email para activar todas las funciones.
+      </div>
+      <div class="flex">
+        <button class="btn btn-outline">Cancelar</button>
+        <button class="btn btn-primary">Guardar💾</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Biblioteca UI. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
