@@ -113,8 +113,9 @@
   </section>
 
   <!-- Sección: Modal -->
-  <section id="modal" class="demo-section">
-    <h2 class="demo-subtitle">Modal</h2>
+   <h2 class="demo-subtitle">Modal</h2>
+  <section id="modal" class=" container">
+    
     <div class="card">
       <div class="flex flex-between">
         <div>
@@ -127,8 +128,38 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><br>
+  <button class="btn" id="openModal">Abrir Modal</button>
 
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Este es el Modal</h2>
+      <p>Puedes colocar cualquier contenido aquí: textos, imágenes, formularios, etc.</p>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <script>
+    const modal = document.getElementById('myModal');
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    openBtn.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
   <!-- Sección: Ejemplo Completo -->
   <section id="ejemplo" class="demo-section">
     <h2 class="demo-subtitle">Ejemplo Completo con los componentes usados</h2>
